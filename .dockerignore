@@ -1,0 +1,59 @@
+# Git
+.git
+.gitignore
+
+# Python caches
+__pycache__
+*.py[cod]
+*.egg-info
+*.egg
+.eggs
+dist
+build
+
+# Virtual environments
+.venv
+venv
+ENV
+
+# Testing
+.pytest_cache
+htmlcov
+.coverage
+coverage.xml
+tests/
+
+# Type checking / linting
+.mypy_cache
+.ruff_cache
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# Node (web build happens inside Docker)
+web/node_modules
+
+# Data / logs (runtime volumes)
+data/
+qdrant_data/
+logs/
+
+# Env files
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Worktrees
+.worktrees/
+
+# Misc
+benchmarks/
+docs/plans/
+*.md
+!README.md

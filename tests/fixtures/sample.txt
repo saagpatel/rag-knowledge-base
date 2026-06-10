@@ -1,0 +1,8 @@
+This is a plain text sample file for testing.
+
+It has multiple paragraphs separated by blank lines.
+
+The third paragraph contains some additional text to ensure
+the loader handles multi-line content correctly.
+
+Final paragraph here.

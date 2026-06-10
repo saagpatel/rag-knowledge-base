@@ -1,0 +1,29 @@
+{
+  "queries": [
+    {
+      "query": "How to configure the embedding model?",
+      "expected_files": ["config.yaml", "README.md"],
+      "description": "Should find configuration documentation"
+    },
+    {
+      "query": "What chunking strategies are available?",
+      "expected_files": ["chunkers/"],
+      "description": "Should find chunker implementations"
+    },
+    {
+      "query": "How does hybrid search work?",
+      "expected_files": ["retrieval/engine.py", "qdrant_client.py"],
+      "description": "Should find retrieval and Qdrant search code"
+    },
+    {
+      "query": "How to ingest a PDF document?",
+      "expected_files": ["loaders/pdf.py", "orchestrator.py"],
+      "description": "Should find PDF loader and ingestion pipeline"
+    },
+    {
+      "query": "What is the API response format?",
+      "expected_files": ["api/schemas.py", "api/routes.py"],
+      "description": "Should find API schema definitions"
+    }
+  ]
+}

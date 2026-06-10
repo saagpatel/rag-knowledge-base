@@ -1,0 +1,47 @@
+ollama:
+  host: "http://127.0.0.1:11434"
+  embedding_model: "nomic-embed-text"
+  generation_model: "mistral:7b"
+  timeout: 120
+  max_retries: 3
+
+qdrant:
+  host: "127.0.0.1"
+  port: 6333
+  grpc_port: 6334
+  collection_prefix: "rag_"
+  hnsw_m: 16
+  hnsw_ef_construct: 200
+
+sqlite:
+  path: "data/rag_kb.db"
+
+chunking:
+  default_size: 512
+  default_overlap: 50
+  min_chunk_size: 50
+  max_chunk_size: 2048
+
+search:
+  default_top_k: 10
+  max_top_k: 100
+  dense_weight: 0.6
+  sparse_weight: 0.4
+  default_mode: "hybrid"
+
+generation:
+  max_context_chunks: 10
+  temperature: 0.1
+  max_tokens: 2048
+
+logging:
+  level: "INFO"
+  format: "json"
+  file: "logs/rag_kb.log"
+
+server:
+  host: "127.0.0.1"
+  port: 8000
+  api_key: ""
+  rate_limit_rpm: 60
+  rate_limit_burst: 10

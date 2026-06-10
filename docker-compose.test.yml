@@ -1,0 +1,14 @@
+# Ephemeral Qdrant for integration tests — separate volume, no telemetry.
+# Usage: docker compose -f docker-compose.yml -f docker-compose.test.yml up -d
+
+services:
+  qdrant:
+    container_name: rag-kb-qdrant-test
+    volumes:
+      - qdrant_test_data:/qdrant/storage
+    environment:
+      - QDRANT__TELEMETRY_DISABLED=true
+
+volumes:
+  qdrant_test_data:
+    name: rag-kb-qdrant-test-data

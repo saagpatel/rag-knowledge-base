@@ -1,0 +1,10 @@
+project:
+  name: RAG Knowledge Base
+  version: "0.1.0"
+settings:
+  chunk_size: 512
+  overlap: 50
+tags:
+  - search
+  - embeddings
+  - local
